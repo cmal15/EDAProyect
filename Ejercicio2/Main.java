@@ -15,22 +15,22 @@ public class Main {
 
     public static void main(String[] args) {
         List<Asignatura> Asignaturas = new ArrayList<>();
-        Asignatura asignatura = new Asignatura("", "", 0);
+        Asignatura asignatura = new Asignatura(0, "", 0);
         List<Alumno> Alumnos = new ArrayList<>();
         Scanner leer = new Scanner(System.in);
         boolean salir = false;
 
         Alumno alumnos = new Alumno("", "");
-        Asignaturas.add(new Asignatura("1120", "ALGEBRA", 8));
-        Asignaturas.add(new Asignatura("1123", "QUIMICA", 10));
-        Asignaturas.add(new Asignatura("1221", "CALCULO INTEGRAL", 8));
-        Asignaturas.add(new Asignatura("1436", "PROBABILIDAD", 8));
-        Asignaturas.add(new Asignatura("1227", "ESTRUCTURA DE DATOS I", 10));
-        Asignaturas.add(new Asignatura("0434", "COMPILADORES", 8));
-        Asignaturas.add(new Asignatura("1644", "BASE DE DATOS", 14));
-        Asignaturas.add(new Asignatura("1598", "REDES DE DATOS", 14));
-        Asignaturas.add(new Asignatura("1531", "INGENIERIA DE SOFTWARE", 8));
-        Asignaturas.add(new Asignatura("1124", "CULTURA", 2));
+        Asignaturas.add(new Asignatura(1120, "ALGEBRA", 8));
+        Asignaturas.add(new Asignatura(1123, "QUIMICA", 10));
+        Asignaturas.add(new Asignatura(1221, "CALCULO INTEGRAL", 8));
+        Asignaturas.add(new Asignatura(1436, "PROBABILIDAD", 8));
+        Asignaturas.add(new Asignatura(1227, "ESTRUCTURA DE DATOS I", 10));
+        Asignaturas.add(new Asignatura(0434, "COMPILADORES", 8));
+        Asignaturas.add(new Asignatura(1644, "BASE DE DATOS", 14));
+        Asignaturas.add(new Asignatura(1598, "REDES DE DATOS", 14));
+        Asignaturas.add(new Asignatura(1531, "INGENIERIA DE SOFTWARE", 8));
+        Asignaturas.add(new Asignatura(1124, "CULTURA", 2));
 
         Alumnos.add(new Alumno("Juan", "123456789"));
         Alumnos.add(new Alumno("María", "987654321"));

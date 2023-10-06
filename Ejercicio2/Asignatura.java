@@ -7,11 +7,11 @@ import java.util.List;
  */
 
 public class Asignatura {
-    private String clave;
+    private int clave;
     private String nombre;
     private int creditos;
 
-    public Asignatura(String clave, String nombre, int creditos) {
+    public Asignatura(int clave, String nombre, int creditos) {
         this.clave = clave;
         this.nombre = nombre;
         this.creditos = creditos;
@@ -25,11 +25,11 @@ public class Asignatura {
         this.creditos = creditos;
     }
     
-    public String get_Clave() {
+    public int get_Clave() {
         return clave;
     }
 
-    public void set_Clave(String clave) {
+    public void set_Clave(int clave) {
         this.clave = clave;
     }
 

@@ -7,19 +7,26 @@ import java.util.List;
  */
 public class BusquedaLineal {
 
-    public static boolean buscarTF(List<Alumno> alumnos, List<Asignatura> asignaturas, String nombreOClaveABuscar) {
+    public static boolean buscar(List<Alumno> alumnos, String nombre) {
         boolean encontrado = false;
 
         for (Alumno alumno : alumnos) {
-            if (alumno.get_Nombre().equals(nombreOClaveABuscar)) {
+            if (alumno.get_Nombre().equals(nombre)) {
                 System.out.println("Se encontró un alumno con el nombre: " + alumno.get_Nombre());
                 System.out.println("Número de Cuenta: " + alumno.get_NumeroCuenta());
                 encontrado = true;
             }
         }
 
+        return encontrado;
+    }
+
+    public static boolean buscar(List<Asignatura> asignaturas, int clave) {
+        boolean encontrado = false;
+
+
         for (Asignatura asignatura : asignaturas) {
-            if (asignatura.get_Clave().equals(nombreOClaveABuscar)) {
+            if (asignatura.get_Clave() == clave) {
                 System.out.println("Se encontró una asignatura con la clave: " + asignatura.get_Clave());
                 System.out.println("Asignatura: " + asignatura.get_Nombre());
                 System.out.println("Creditos: " + asignatura.get_Creditos());
@@ -29,34 +36,33 @@ public class BusquedaLineal {
 
         return encontrado;
     }
-
-    public static int buscarPosicion(List<Alumno> alumnos, List<Asignatura> asignaturas, String nombreOClaveABuscar) {
+    
+    public static int buscarPosicion(List<Alumno> alumnos, String nombre) {
         for (int i = 0; i < alumnos.size(); i++) {
-            if (alumnos.get(i).get_Nombre().equals(nombreOClaveABuscar)) {
+            if (alumnos.get(i).get_Nombre().equals(nombre)) {
                 return i;
-            }
-        }
-
-        for (int i = 0; i < asignaturas.size(); i++) {
-            if (asignaturas.get(i).get_Clave().equals(nombreOClaveABuscar)) {
-                return -i - 2; // Usamos un valor negativo diferente para indicar que se encontró en asignaturas
             }
         }
 
         return -1; // No se encontro nada
     }
 
-    public static int buscarCoincidencias(List<Alumno> alumnos, List<Asignatura> asignaturas, String nombreOClaveABuscar) {
-        int coincidencias = 0;
+    public static int buscarPosicion(List<Asignatura> asignaturas, int clave) {
 
-        for (Alumno alumno : alumnos) {
-            if (alumno.get_Nombre().equals(nombreOClaveABuscar)) {
-                coincidencias++;
+        for (int i = 0; i < asignaturas.size(); i++) {
+            if (asignaturas.get(i).get_Clave() == clave) {
+                return i;
             }
         }
 
-        for (Asignatura asignatura : asignaturas) {
-            if (asignatura.get_Clave().equals(nombreOClaveABuscar)) {
+        return -1; // No se encontro nada
+    }
+
+    public static int buscarCoincidencias(List<Alumno> alumnos, String nombre) {
+        int coincidencias = 0;
+
+        for (Alumno alumno : alumnos) {
+            if (alumno.get_Nombre().equals(nombre)) {
                 coincidencias++;
             }
         }
@@ -64,15 +70,32 @@ public class BusquedaLineal {
         return coincidencias;
     }
 
-    public static Object buscarObjeto(List<Alumno> alumnos, List<Asignatura> asignaturas, String nombreOClaveABuscar) {
+    public static int buscarCoincidencias(List<Asignatura> asignaturas, int clave) {
+        int coincidencias = 0;
+
+        for (Asignatura asignatura : asignaturas) {
+            if (asignatura.get_Clave() == clave) {
+                coincidencias++;
+            }
+        }
+
+        return coincidencias;
+    }
+
+    public static Object buscarObjeto(List<Alumno> alumnos, String nombre) {
         for (Alumno alumno : alumnos) {
-            if (alumno.get_Nombre().equals(nombreOClaveABuscar)) {
+            if (alumno.get_Nombre().equals(nombre)) {
                 return alumno; 
             }
         }
 
+        return null; 
+    }
+
+    public static Object buscarObjeto(List<Asignatura> asignaturas, int clave) {
+
         for (Asignatura asignatura : asignaturas) {
-            if (asignatura.get_Clave().equals(nombreOClaveABuscar)) {
+            if (asignatura.get_Clave() == clave) {
                 return asignatura; 
             }
         }
