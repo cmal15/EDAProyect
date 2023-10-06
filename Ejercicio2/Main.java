@@ -24,7 +24,7 @@ public class Main {
         Asignaturas.add(new Asignatura(1221, "CALCULO INTEGRAL", 8));
         Asignaturas.add(new Asignatura(1436, "PROBABILIDAD", 8));
         Asignaturas.add(new Asignatura(1227, "ESTRUCTURA DE DATOS I", 10));
-        Asignaturas.add(new Asignatura(0434, "COMPILADORES", 8));
+        Asignaturas.add(new Asignatura(1434, "COMPILADORES", 8));
         Asignaturas.add(new Asignatura(1644, "BASE DE DATOS", 14));
         Asignaturas.add(new Asignatura(1598, "REDES DE DATOS", 14));
         Asignaturas.add(new Asignatura(1531, "INGENIERIA DE SOFTWARE", 8));
@@ -38,7 +38,7 @@ public class Main {
         Alumnos.add(new Alumno("Ana", "222222222"));
         Alumnos.add(new Alumno("David", "888888888"));
         Alumnos.add(new Alumno("Isabel", "999999999"));
-        Alumnos.add(new Alumno("Sofía", "444444444"));
+        Alumnos.add(new Alumno("Sofia", "444444444"));
         Alumnos.add(new Alumno("Luis", "666666666"));
 
         int op, op2, clave;
@@ -67,13 +67,13 @@ public class Main {
                         System.out.print("Ingrese nombre del alumno a buscar: ");
                         nombre = leer.nextLine();
                         boolean encontrado = buscarTF(Alumnos, nombre);
-                        System.out.println("Se encontro el elemento: " + encontrado);
+                        System.out.println((encontrado?"Si":"No") +" se encontro al alumno");
                     }else{
                         //Buscar en asignaturas retorna booleano 
                         System.out.print("Ingrese la clave de la asignatura a buscar: ");
                         clave = leer.nextInt();
                         boolean encontrado = buscarTF(Asignaturas, clave);
-                        System.out.println("Se encontro el elemento: " + encontrado);
+                        System.out.println((encontrado?"Si":"No") +" se encontro la asignatura");
                     }
                     break;
                 }
@@ -156,10 +156,10 @@ public class Main {
                         Object objetoEncontrado = buscarObjeto(Asignaturas, clave);
     
                         if (objetoEncontrado != null) {
-                                Asignatura asignaturaEncontrada = (Asignatura) objetoEncontrado;
-                                System.out.println("Se encontró una asignatura con la clave: " + asignaturaEncontrada.get_Clave());
-                                System.out.println("Asignatura: " + asignaturaEncontrada.get_Nombre());
-                                System.out.println("Créditos: " + asignaturaEncontrada.get_Creditos());
+                            Asignatura asignaturaEncontrada = (Asignatura) objetoEncontrado;
+                            System.out.println("Se encontró una asignatura con la clave: " + asignaturaEncontrada.get_Clave());
+                            System.out.println("Asignatura: " + asignaturaEncontrada.get_Nombre());
+                            System.out.println("Créditos: " + asignaturaEncontrada.get_Creditos());
                         }else{
                             System.out.println("No se encontró ninguna coincidencia.");
                         }
