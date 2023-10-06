@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class BusquedaLineal {
 
-    public static boolean buscar(List<Alumno> alumnos, String nombre) {
+    public static boolean buscarTF(List<Alumno> alumnos, String nombre) {
         boolean encontrado = false;
 
         for (Alumno alumno : alumnos) {
@@ -21,7 +21,7 @@ public class BusquedaLineal {
         return encontrado;
     }
 
-    public static boolean buscar(List<Asignatura> asignaturas, int clave) {
+    public static boolean buscarTF(List<Asignatura> asignaturas, int clave) {
         boolean encontrado = false;
 
 
