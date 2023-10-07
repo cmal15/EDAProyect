@@ -97,6 +97,11 @@ public class Encadenamiento{
             System.out.println("Lista " + (indice) + " : ");
             return;
         }
+        if (lista.isEmpty() && indice >=10) {
+            System.out.println("Lista " + (indice) + ": ");
+            return;
+        }
+
         int tam = lista.size();
         if (indice < 10)
             System.out.print("Lista " + (indice) + " : ");
