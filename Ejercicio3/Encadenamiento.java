@@ -3,7 +3,6 @@ package Ejercicio3;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Scanner;
-import Ejercicio3.Hash;
 
 public class Encadenamiento{
 
