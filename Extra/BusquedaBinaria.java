@@ -1,8 +1,5 @@
 package Extra;
 
-import Extra.CriterioDeOrdenamientoAlumno;
-import Extra.CriterioDeOrdenamientoAsignatura;
-
 import java.util.Collections;
 import java.util.List;
 
