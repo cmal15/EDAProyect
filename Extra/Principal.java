@@ -3,7 +3,13 @@ package Extra;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import static Extra.BusquedaBinaria.isElement;
+import static Extra.BusquedaBinaria.getElement;
+import static Extra.BusquedaBinaria.firstIndexOfElement;
+import static Extra.BusquedaBinaria.lastIndexOfElement;
+import static Extra.BusquedaBinaria.timesElement;
+
 import Ejercicio2.Alumno;
 import Ejercicio2.Asignatura;
 
@@ -36,23 +42,6 @@ public class Principal {
         Alumnos.add(new Alumno("Isabel", "999999999"));
         Alumnos.add(new Alumno("Sofia", "444444444"));
         Alumnos.add(new Alumno("Luis", "666666666"));
-/* 
-        //Buscar en alumnos retorna booleano
-        String nombre;
-        System.out.print("Ingrese nombre del alumno a buscar: ");
-        nombre = leer.nextLine();
-        boolean encontrado = isElement(Alumnos, nombre);
-        Alumno.imprimirLista(Alumnos);
-        System.out.println((encontrado?"Si":"No") +" se encontro al alumno");
-
-        //Buscar en asignaturas retorna booleano
-        int clave;
-        System.out.print("Ingrese clave de la asignatura a buscar: ");
-        clave = leer.nextInt();
-        encontrado = isElement(Asignaturas, clave);
-        Asignatura.imprimirLista(Asignaturas);
-        System.out.println((encontrado?"Si":"No") +" se encontro a la asignatura");
-*/
 
         int op, op2, clave;
         String nombre;
@@ -99,9 +88,9 @@ public class Principal {
                         nombre = leer.nextLine();
                         int posicion = firstIndexOfElement(Alumnos, nombre);
                         if (posicion != -1) {
-                            System.out.println("La primera aparicion en la lista es en la posicion " + posicion);
+                            System.out.println("La primera aparicion en la lista es en la posicion " + (posicion+1));
                             posicion = lastIndexOfElement(Alumnos, nombre);
-                            System.out.println("La primera ultima en la lista es en la posicion " + posicion );
+                            System.out.println("La ultima aparicion en la lista es en la posicion " + (posicion+1) );
                             System.out.println("Número de Cuenta: " + Alumnos.get(posicion).get_NumeroCuenta());
                         } else {
                             System.out.println("No se encontró ninguna coincidencia.");
@@ -111,9 +100,9 @@ public class Principal {
                         clave = leer.nextInt();
                         int posicion = firstIndexOfElement(Asignaturas, clave);
                         if (posicion != -1) {
-                            System.out.println("La primera aparicion en la lista es en la posicion " + posicion);
+                            System.out.println("La primera aparicion en la lista es en la posicion " + (posicion+1) );
                             posicion = lastIndexOfElement(Asignaturas, clave);
-                            System.out.println("La primera ultima en la lista es en la posicion " + posicion );
+                            System.out.println("La ultima aparicion en la lista es en la posicion " + (posicion+1) );
                             System.out.println("Asignatura: " + Asignaturas.get(posicion).get_Nombre());
                             System.out.println("Creditos: " + Asignaturas.get(posicion).get_Creditos());
                         } else {
@@ -203,5 +192,3 @@ public class Principal {
         leer.close();
     }        
 }
-
-
