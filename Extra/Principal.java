@@ -2,9 +2,20 @@
  * 
  * @author Carlos Manuel Alvarez Lopez
  * @author Haziel Ibares Sanchez
- * @author Gustavo Sanchez Santana
+ * @author Gustavo Santana Sanchez
  * 
 */
+
+/**
+ * Programa principal que permite realizar diversas operaciones de búsqueda binaria y gestión
+ * de listas de Alumnos y Asignaturas.
+ * 
+ * Este programa interactúa con el usuario a través de un menú que le permite buscar elementos,
+ * imprimir listas, y realizar otras operaciones relacionadas con las clases Alumno y Asignatura.
+ * 
+ * Ultima modificacion: 08/10/2023
+ */
+
 package Extra;
 
 import java.util.ArrayList;
