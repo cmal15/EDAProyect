@@ -5,7 +5,9 @@
  * @author Gustavo Sanchez Santana
  * 
  * Modificado el 07/10/2023
- * 
+ * El archivo consiste en el metodo principal que incluye un menu con el cual se accede a las operaciones
+ * de la implementacion de un programa de convesion de llaves y lidiar con las colisiones mediante encademiento,
+ * aplicando listas ligadas y sus operaciones para lo mismo.
  * 
 */
  package Ejercicio3;
