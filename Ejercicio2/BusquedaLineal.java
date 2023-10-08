@@ -5,6 +5,16 @@
  * @author Gustavo Sanchez Santana
  * 
 */
+
+/**
+ * Clase que proporciona métodos para realizar búsquedas lineales en listas de objetos.
+ * Esta clase incluye métodos para buscar elementos en listas de alumnos y asignaturas,
+ * así como métodos para buscar la posición, el número de coincidencias y el objeto mismo
+ * en base a criterios de búsqueda.
+ * 
+ * Ultima Modificacion: 07/10/2023
+ */
+
 package Ejercicio2;
 
 import java.util.List;
