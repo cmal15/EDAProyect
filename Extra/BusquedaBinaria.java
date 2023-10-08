@@ -2,9 +2,19 @@
  * 
  * @author Carlos Manuel Alvarez Lopez
  * @author Haziel Ibares Sanchez
- * @author Gustavo Sanchez Santana
+ * @author Gustavo Santana Sanchez
  * 
 */
+
+/**
+ * Clase que proporciona métodos para realizar búsquedas binarias en listas de objetos.
+ * Esta clase incluye métodos para buscar elementos en listas de alumnos y asignaturas,
+ * así como métodos para buscar la posición, el número de coincidencias y el objeto mismo
+ * en base a criterios de búsqueda.
+ * 
+ * Ultima Modificacion: 08/10/2023
+ */
+
 package Extra;
 
 import java.util.Collections;
