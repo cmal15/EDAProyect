@@ -5,6 +5,17 @@
  * @author Gustavo Sanchez Santana
  * 
 */
+
+**
+ * Programa principal que permite realizar diversas operaciones de búsqueda y gestión
+ * de listas de Alumnos y Asignaturas.
+ * 
+ * Este programa interactúa con el usuario a través de un menú que le permite buscar elementos,
+ * imprimir listas, y realizar otras operaciones relacionadas con las clases Alumno y Asignatura.
+ * 
+ * Ultima modificacion: 07/10/2023
+ */
+    
 package Ejercicio2;
 
 import static Ejercicio2.BusquedaLineal.buscarTF;
