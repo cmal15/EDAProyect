@@ -2,7 +2,7 @@
  * 
  * @author Carlos Manuel Alvarez Lopez
  * @author Haziel Ibares Sanchez
- * @author Gustavo Sanchez Santana
+ * @author Gustavo Santana Sanchez
  * 
  * Modificado el 07/10/2023
  * El archivo consiste en el metodo principal que incluye un menu con el cual se accede a las operaciones
