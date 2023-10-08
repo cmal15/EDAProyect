@@ -6,7 +6,7 @@
  * 
 */
 
-**
+/**
  * Programa principal que permite realizar diversas operaciones de búsqueda y gestión
  * de listas de Alumnos y Asignaturas.
  * 
