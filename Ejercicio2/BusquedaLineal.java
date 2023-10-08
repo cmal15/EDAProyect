@@ -19,9 +19,6 @@ package Ejercicio2;
 
 import java.util.List;
 
-/**
- * @author Equipo 8
- */
 public class BusquedaLineal {
 
     public static boolean buscarTF(List<Alumno> alumnos, String nombre) {
