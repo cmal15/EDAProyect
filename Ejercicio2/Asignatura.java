@@ -5,13 +5,19 @@
  * @author Gustavo Sanchez Santana
  * 
 */
+**
+ * Clase que representa una Asignatura.
+ * Esta clase define atributos y métodos para gestionar la información de una asignatura, 
+ * incluyendo su clave, nombre y número de créditos.
+ * También proporciona un método estático para imprimir una lista de asignaturas.
+ * 
+ * Ultima Modificacion: 07/10/2023
+ */
+
 package Ejercicio2;
 
 import java.util.List;
 
-/**
- * @author Equipo 8
- */
 
 public class Asignatura {
     private int clave;
