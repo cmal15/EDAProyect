@@ -131,6 +131,7 @@ public class Encadenamiento{
         for (int i=0; i<tam; i++) {
             if (lista.get(i) == elemento) {
                 res = true;
+                return res;
             }
         }
         return(res);
