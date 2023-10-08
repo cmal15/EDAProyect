@@ -1,9 +1,16 @@
+/**
+ * 
+ * @author Carlos Manuel Alvarez Lopez
+ * @author Haziel Ibares Sanchez
+ * @author Gustavo Sanchez Santana
+ * 
+*/
 package Ejercicio2;
 
+import static Ejercicio2.BusquedaLineal.buscarTF;
+import static Ejercicio2.BusquedaLineal.buscarPosicion;
 import static Ejercicio2.BusquedaLineal.buscarCoincidencias;
 import static Ejercicio2.BusquedaLineal.buscarObjeto;
-import static Ejercicio2.BusquedaLineal.buscarPosicion;
-import static Ejercicio2.BusquedaLineal.buscarTF;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

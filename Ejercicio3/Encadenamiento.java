@@ -1,4 +1,11 @@
-package Ejercicio3;
+/**
+ * 
+ * @author Carlos Manuel Alvarez Lopez
+ * @author Haziel Ibares Sanchez
+ * @author Gustavo Sanchez Santana
+ * 
+*/
+ package Ejercicio3;
 
 import java.util.List;
 import java.util.LinkedList;
