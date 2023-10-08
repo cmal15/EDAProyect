@@ -2,9 +2,10 @@
  * 
  * @author Carlos Manuel Alvarez Lopez
  * @author Haziel Ibares Sanchez
- * @author Gustavo Sanchez Santana
+ * @author Gustavo Santana Sanchez
  * 
 */
+
 package Extra;
 
 import Ejercicio2.Alumno;
