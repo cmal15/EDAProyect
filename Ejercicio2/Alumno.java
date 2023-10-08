@@ -5,6 +5,16 @@
  * @author Gustavo Sanchez Santana
  * 
 */
+
+/**
+ * Clase que representa a un Alumno.
+ * Esta clase define atributos y métodos para gestionar la información de un alumno, 
+ * incluyendo su nombre y número de cuenta.
+ * También proporciona un método estático para imprimir una lista de alumnos.
+ */
+
+//Ultima modificacion: 07/10/2023
+
 package Ejercicio2;
 
 import java.util.List;
