@@ -17,8 +17,11 @@ public class Hash{
         return (n%15);
     }
 
-    public static int hashFunctioncuadrado(int n){
+    public static int hashFunctionCuadrado(int n){
         String s = (Integer.toString(n*n));
+        if(s.length() < 3){
+            s = s+"00";
+        }
         int mid = s.length()/2;
         s = s.substring(mid-1, mid+1);
         return Integer.valueOf(s)%15;
