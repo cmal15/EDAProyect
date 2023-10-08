@@ -2,7 +2,7 @@
  * 
  * @author Carlos Manuel Alvarez Lopez
  * @author Haziel Ibares Sanchez
- * @author Gustavo Sanchez Santana
+ * @author Gustavo Santana Sanchez
  * 
  * Modificado el 07/10/2023
  * Clase la cual contiene distintos metodos para la conversion de llaves en indices para las listas ligadas de la clase encadenamiento
