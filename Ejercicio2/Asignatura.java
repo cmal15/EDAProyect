@@ -5,7 +5,8 @@
  * @author Gustavo Sanchez Santana
  * 
 */
-**
+
+/**
  * Clase que representa una Asignatura.
  * Esta clase define atributos y métodos para gestionar la información de una asignatura, 
  * incluyendo su clave, nombre y número de créditos.
