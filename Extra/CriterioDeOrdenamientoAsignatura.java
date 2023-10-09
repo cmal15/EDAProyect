@@ -2,9 +2,16 @@
  * 
  * @author Carlos Manuel Alvarez Lopez
  * @author Haziel Ibares Sanchez
- * @author Gustavo Sanchez Santana
+ * @author Gustavo Santana Sanchez
  * 
 */
+
+/**
+ * Clase que implementa la interfaz Comparator<Asignatura>. 
+ * Esta clase se utiliza para definir un criterio de 
+ * ordenamiento personalizado para objetos de la clase Asignatura.
+ */
+
 package Extra;
 
 import Ejercicio2.Asignatura;
