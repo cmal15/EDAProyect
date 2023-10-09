@@ -6,6 +6,12 @@
  * 
 */
 
+/**
+ * Clase que implementa la interfaz Comparator<Alumno>. 
+ * Esta clase se utiliza para definir un criterio de 
+ * ordenamiento personalizado para objetos de la clase Alumno.
+ */
+
 package Extra;
 
 import Ejercicio2.Alumno;
