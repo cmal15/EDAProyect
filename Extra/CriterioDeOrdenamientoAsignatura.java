@@ -10,6 +10,8 @@
  * Clase que implementa la interfaz Comparator<Asignatura>. 
  * Esta clase se utiliza para definir un criterio de 
  * ordenamiento personalizado para objetos de la clase Asignatura.
+ *
+ * Ultima Modificacion: 08/10/2023
  */
 
 package Extra;
